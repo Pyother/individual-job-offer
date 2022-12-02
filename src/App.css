@@ -1,5 +1,37 @@
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+form {
+  width: 60%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .formInput {
@@ -11,22 +43,33 @@
 }
 
 input {
-  width: 40%;
+  width: 60%;
   height: 4vh;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   font-weight: bold;
   border: 0px;
+  -webkit-transition: box-shadow 1s;
 }
 
 input:focus {
-  border: 0px;
   outline: 0;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-h2 {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+input:hover {
+  outline: 0;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  animation-name: inputHover;
+  animation-duration: 0.5s;
+  -webkit-transition: box-shadow 1s;
 }
+
+@keyframes inputHover {
+  from {box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+  to {box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+}
+
+
+
