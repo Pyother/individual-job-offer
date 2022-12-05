@@ -1,5 +1,4 @@
-import props from 'prop-types';
-import './formInput.css';
+import './components.css';
 
 const FormInput = (props) => {
     return (

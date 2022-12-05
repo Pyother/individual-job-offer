@@ -1,9 +1,9 @@
 import FormInput from "./components/FormInput";
 import "./App.css";
 
-export default function App() {
+export default function Form() {
     return (
-        <div className="app">
+        <div className="myform">
             <form action="" method="get">
                 <h2>Formularz</h2>
                 <FormInput placeholder="Pracodawca"/>
