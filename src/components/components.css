@@ -4,3 +4,31 @@
     justify-self: center;
 }
 
+.header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 75px;
+    font-family: 'Playfair Display', serif;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.title p {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.title p::first-letter {
+    font-size: 150%;
+    font-weight: lighter;
+}
+
+
+

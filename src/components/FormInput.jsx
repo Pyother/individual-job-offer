@@ -6,7 +6,7 @@ const FormInput = (props) => {
             <h3>{props.placeholder}</h3>
             <input placeholder={props.placeholder}/>
         </div>
-    )
+    );
 }
 
 export default FormInput
