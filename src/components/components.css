@@ -5,9 +5,13 @@
 }
 
 .header {
-    display: grid;
+    display: contents;
     justify-content: center;
     align-items: center;
+}
+
+.header-row {
+    width: 100%;
 }
 
 .title {
@@ -29,6 +33,20 @@
     font-size: 150%;
     font-weight: lighter;
 }
+
+.title-2 {
+    text-indent: 0.5em;
+}
+
+.title-3 {
+    text-indent: 1em;
+}
+
+.title-4 {
+    text-indent: 1.5em;
+}
+
+
 
 
 
