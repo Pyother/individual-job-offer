@@ -21,7 +21,7 @@ const HomePageHeader = (props) =>{
                     </Col>
                     <Col md={7} style={{padding: 0}}>
                         <div className="title-graphics">
-                            Fweef
+                            (Miejsce na grafikę i efekty specjalne)
                         </div>
                     </Col>
                 </Row>

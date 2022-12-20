@@ -20,8 +20,7 @@
     align-items: center;
     line-height: 75px;
     font-family: 'Playfair Display', serif;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid rgb(167, 109, 109);
 }
 
 .title p {
@@ -45,6 +44,63 @@
 .title-4 {
     text-indent: 1.5em;
 }
+
+.title-graphics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55.4vh;
+}
+
+.guide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*padding: 0;*/
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    border: 1px solid rgb(167, 109, 109);
+}
+
+.guide p {
+    font-size: 14px;
+}
+
+.guide-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    font-size: 25px;
+}
+
+.guide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    border: 1px solid rgb(167, 109, 109);
+}
+
+
+
+
 
 
 
