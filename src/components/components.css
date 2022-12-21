@@ -4,6 +4,59 @@
     justify-self: center;
 }
 
+.myform {
+    width: 60%;
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, white, transparent);
+    padding: 0%;
+}
+
+form {
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+  
+.formInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 15vh;
+}
+  
+input {
+    width: 40%;
+    height: 4vh;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    /*font-weight: bold;*/
+    border: 0px;
+    -webkit-transition: box-shadow 1s;
+}
+  
+input:focus {
+    outline: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+  
+input:hover {
+    outline: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+    animation-name: inputHover;
+    animation-duration: 0.5s;
+    -webkit-transition: box-shadow 1s;
+}
+  
+@keyframes inputHover {
+    from {box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;}
+    to {box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+}
+
 .header {
     display: contents;
     justify-content: center;
@@ -21,6 +74,7 @@
     line-height: 75px;
     font-family: 'Playfair Display', serif;
     border: 1px solid rgb(167, 109, 109);
+    resize: none;
 }
 
 .title p {
@@ -50,6 +104,7 @@
     justify-content: center;
     align-items: center;
     height: 55.4vh;
+    resize: none;
 }
 
 .guide {
@@ -68,6 +123,9 @@
 }
 
 .guide p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
 }
 
@@ -75,7 +133,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10%;
+    padding: 5%;
     font-size: 25px;
 }
 
@@ -83,7 +141,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 40vh;
+    -webkit-transition: box-shadow 1s;
+}
+
+.guide-content:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
+    animation-name: inputHover;
+    animation-duration: 0.5s;
+    -webkit-transition: box-shadow 1s;
+}
+
+.guide-content:focus {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.guide-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.guide-content p {
+    font-size: 14px;
 }
 
 .footer {
@@ -97,6 +179,7 @@
     font-size: 14px;
     border: 1px solid rgb(167, 109, 109);
 }
+
 
 
 
