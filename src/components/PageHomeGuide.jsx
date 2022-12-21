@@ -3,7 +3,7 @@ import './components.css';
 
 import { Row, Col, Container, Grid} from 'react-bootstrap';
 
-const HomePageGuide = (props) => {
+const PageHomeGuide = (props) => {
     return (
         <div>
             <Container fluid className="guide">
@@ -44,4 +44,4 @@ const HomePageGuide = (props) => {
     );
 }
 
-export default HomePageGuide;
+export default PageHomeGuide;

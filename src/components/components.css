@@ -1,3 +1,21 @@
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    /*font-weight: bold;*/
+    /*text-transform: uppercase;*/
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    /*font-weight: bold;*/
+}
+
 .formInput {
     display: center;
     align-items: center;

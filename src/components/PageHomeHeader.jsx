@@ -3,7 +3,7 @@ import './components.css';
 
 import { Row, Col, Container } from 'react-bootstrap';
 
-const HomePageHeader = (props) =>{
+const PageHomeHeader = (props) =>{
     return (
         <div>
             <Container className="header">
@@ -30,4 +30,4 @@ const HomePageHeader = (props) =>{
     );
 }
 
-export default HomePageHeader;
+export default PageHomeHeader;

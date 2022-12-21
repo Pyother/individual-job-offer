@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Form from './Form';
-import Home from './Home';
-import HomePageHeader from './components/HomePageHeader';
-import HomePageGuide from './components/HomePageGuide';
-import HomePageFooter from './components/HomePageFooter';
+import Home from './PageHome';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HomePageHeader/>
-    <HomePageGuide/>
-    <Form/>
-    <HomePageFooter/>
+    <Home/>
   </React.StrictMode>
 );
 

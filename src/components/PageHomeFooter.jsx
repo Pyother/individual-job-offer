@@ -3,7 +3,7 @@ import './components.css';
 
 import { Row, Col, Container } from 'react-bootstrap';
 
-const HomePageFooter = (propos) => {
+const PageHomeFooter = (propos) => {
     return (
         <div>
             <Container fluid className='footer'>
@@ -23,4 +23,4 @@ const HomePageFooter = (propos) => {
     );
 }
 
-export default HomePageFooter;
+export default PageHomeFooter;
