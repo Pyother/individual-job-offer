@@ -198,6 +198,26 @@ input:hover {
     border: 1px solid rgb(167, 109, 109);
 }
 
+.database-guide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.database-guide h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.database-guide p {
+    font-size: 14px;
+}   
+
 
 
 

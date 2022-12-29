@@ -19,7 +19,7 @@ const PageHomeGuide = (props) => {
                             <Col>
                                 <Row><h1>Baza danych</h1></Row>
                                 <Row><p>(Opis)</p></Row>
-                            </Col>
+                            </Col>/
                         </div>
                     </Col>
                     <Col md={4}>

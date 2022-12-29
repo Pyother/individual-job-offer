@@ -3,7 +3,7 @@ import './components.css';
 
 import { Row, Col, Container } from 'react-bootstrap';
 
-const PageHomeFooter = (propos) => {
+const PageHomeFooter = (props) => {
     return (
         <div>
             <Container fluid className='footer'>
