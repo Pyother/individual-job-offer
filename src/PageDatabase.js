@@ -5,5 +5,5 @@ export default function Database() {
         <div>
             <PageDatabaseGuide/>
         </div>
-    )
+    );
 }
