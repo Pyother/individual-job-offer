@@ -79,6 +79,7 @@ input:hover {
     display: contents;
     justify-content: center;
     align-items: center;
+    
 }
 
 .header-row {
@@ -91,7 +92,6 @@ input:hover {
     align-items: center;
     line-height: 75px;
     font-family: 'Playfair Display', serif;
-    /*border: 1px solid rgb(167, 109, 109);*/
     resize: none;
 }
 
@@ -124,6 +124,29 @@ input:hover {
     height: 55.4vh;
     resize: none;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button { 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0;
+}
+
+.button:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: black;
+    color: white;
+}
+
 
 .guide {
     display: grid;
@@ -165,6 +188,8 @@ input:hover {
 }
 
 .guide-content:hover {
+    background-color: black;
+    color: white;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;  
     animation-name: inputHover;
     animation-duration: 0.5s;
@@ -198,25 +223,6 @@ input:hover {
     /*border: 1px solid rgb(167, 109, 109);*/
 }
 
-.database-guide {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', serif;
-}
-
-.database-guide h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-}
-
-.database-guide p {
-    font-size: 14px;
-}   
 
 
 

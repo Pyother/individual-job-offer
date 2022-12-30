@@ -1,23 +1,18 @@
 import { useState } from 'react';
 import './components.css';
 
-const FormInput = (props) => {
+const FormInputText = (props) => {
 
-    const [data, setData] = useState(null);
-    const [print, setPrint] = useState(false);
-
-    function getData(value) {
-        console.warn(value.target)
-    }
+    
     
     return (
         <div className="formInput">
             <h3>{props.placeholder}</h3>
-            <input placeholder={props.placeholder} onChange={getData} on/>
-            
+            <input type="text" required placeholder={props.placeholder} value={name} onChange={(e) => setName(e.target.value)}/>
+            <input type="submit"/>
         </div>
     );
 }
 
-export default FormInput
+export default FormInputText
 

@@ -1,23 +1,54 @@
-import FormInput from "./components/FormInput";
+import { useEffect, useState } from "react";
+import { Row, Container } from "react-bootstrap";
+import "./components/components.css";
 
-export default function Form() {
+const Form = () => {
+
+    const [employer, setEmployer] = useState("");
+    const [system, setSystem] = useState("");
+    const [name, setName] = useState("");
+    const [surname, setSurname] = useState("");
+    
+    const win = window.sessionStorage;
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        win.clear();
+        win.setItem("employer", employer);
+        win.setItem("system", system);
+        win.setItem("name", name);
+        win.setItem("surname", surname);
+    }
+    
     return (
         <div className="myform">
-            <form action="" method="get">
+            <form onSubmit={handleSubmit} >
                 <h2>Formularz</h2>
-                <FormInput placeholder="Pracodawca"/>
-                <FormInput placeholder="System wynagradzania"/> 
-                <FormInput placeholder="Imię"/>
-                <FormInput placeholder="Nazwisko"/>
-                <FormInput placeholder="Płeć"/>
-                <FormInput placeholder="Stawka"/>
-                <FormInput placeholder="Data zatrudnienia"/>
-                <FormInput placeholder="Dodatek funkcyjny"/>
-                <FormInput placeholder="Imię rekrutera"/>
-                <FormInput placeholder="Nazwisko rekrutera"/>
-                <FormInput placeholder="E-mail rekrutera"/>
+                <div className="formInput">
+                    <h3>Pracodawca</h3>
+                    <input type="text" required placeholder="Pracodawca" value={employer} onChange={(e) => setEmployer(e.target.value)}/>
+                </div>
+                <div className="formInput">
+                    <h3>System wynagradzania</h3>
+                    <input type="text" required placeholder="System wynagradzania" value={system} onChange={(e) => setSystem(e.target.value)}/>
+                </div>
+                <div className="formInput">
+                    <h3>Imię</h3>
+                    <input type="text" placeholder="Imię" value={name} onChange={(e) => setName(e.target.value)}/>
+                </div>
+                <div className="formInput">
+                    <h3>Nazwisko</h3>
+                    <input type="text" required placeholder="Nazwisko" value={surname} onChange={(e) => setSurname(e.target.value)}/>
+                </div>
+                <Container fluid className="button-container">
+                    <Row style={{padding: "3%"}}>
+                        <button type="submit" className="button">Zatwierdź odpowiedzi</button>
+                    </Row>
+                </Container>
             </form>
         </div>
     );
 }
+
+export default Form;
 
