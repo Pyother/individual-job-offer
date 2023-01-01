@@ -13,7 +13,10 @@ h2 {
 h3 {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
-    /*font-weight: bold;*/
+}
+
+p {
+    font-size: 14px;
 }
 
 .formInput {
@@ -171,7 +174,7 @@ input:hover {
 }
 
 .guide-header {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     padding: 5%;
@@ -222,6 +225,20 @@ input:hover {
     font-size: 14px;
     /*border: 1px solid rgb(167, 109, 109);*/
 }
+
+.editor-table {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 5vh;
+}
+
+
+
+
 
 
 

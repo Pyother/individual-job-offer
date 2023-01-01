@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Row, Container } from "react-bootstrap";
 import "./components/components.css";
 
@@ -11,6 +12,8 @@ const Form = () => {
     
     const win = window.sessionStorage;
 
+    const navigate = useNavigate();
+
     const handleSubmit = (event) => {
         event.preventDefault();
         win.clear();
@@ -18,6 +21,7 @@ const Form = () => {
         win.setItem("system", system);
         win.setItem("name", name);
         win.setItem("surname", surname);
+        navigate("/editor");
     }
     
     return (
