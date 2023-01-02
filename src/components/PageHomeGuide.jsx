@@ -36,7 +36,7 @@ const PageHomeGuide = (props) => {
     
     return (
         <div>
-            <Container fluid className="guide">
+            <Container fluid className="guide" style={{backgroundColor: "#f0f0f0"}}>
                 <Row style={{margin: 0}}>
                     <div className="guide-header">
                         Nagłówek
@@ -46,7 +46,7 @@ const PageHomeGuide = (props) => {
                 <Row style={{padding: "5%", width: "1200px"}}>
                     <Col md={4}>
                         <div ref={ref} className="guide-content" id='redirect-database'>
-                            <Col>
+                            <Col >
                                 <Row><h1>Baza danych</h1></Row>
                                 <Row><p>(Opis)</p></Row>
                             </Col>
@@ -54,7 +54,7 @@ const PageHomeGuide = (props) => {
                     </Col>
                     <Col md={4}>
                         <div className="guide-content" id='redirect-form'>
-                            <Col>
+                            <Col >
                                 <Row><h1>Formularz</h1></Row>
                                 <Row><p>(Opis formularza)</p></Row>
                             </Col>
@@ -62,7 +62,7 @@ const PageHomeGuide = (props) => {
                     </Col>
                     <Col md={4}>
                         <div className="guide-content" id='redirect-admin'>
-                            <Col>
+                            <Col >
                                 <Row><h1>Panel administracyjny</h1></Row>
                                 <Row><p>(Opis zastosowania panelu administracyjnego)</p></Row>
                             </Col>

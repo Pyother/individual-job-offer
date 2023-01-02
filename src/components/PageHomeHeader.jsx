@@ -7,7 +7,7 @@ const PageHomeHeader = (props) =>{
     return (
         <div>
             <Container className="header">
-                <Row style={{padding: 0, border: "1px solid black"}}>
+                <Row className="title-container" style={{padding: 0}}>
                     <Col md={5} style={{padding: 0}}>
                         <div className="title">
                             <p>Kalkulator<br/>

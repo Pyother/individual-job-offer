@@ -6,7 +6,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 const PageHomeFooter = (props) => {
     return (
         <div>
-            <Container fluid className='footer'>
+            <Container fluid className='footer' style={{backgroundColor: "#f0f0f0"}}>
                 <Row>
                     <Col>
                         Autorzy
