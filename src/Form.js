@@ -25,8 +25,8 @@ const Form = () => {
     }
     
     return (
-        <div className="myform">
-            <form onSubmit={handleSubmit} >
+        <div className="myform" >
+            <form onSubmit={handleSubmit} style={{position: "relative", zIndex: "2"}}>
                 <h2>Formularz</h2>
                 <div className="formInput">
                     <h3>Pracodawca</h3>

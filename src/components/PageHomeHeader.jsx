@@ -5,8 +5,8 @@ import { Row, Col, Container } from 'react-bootstrap';
 
 const PageHomeHeader = (props) =>{
     return (
-        <div>
-            <Container className="header">
+        <div style={{position: "relative", zIndex: "2"}}>
+            <Container className="header" >
                 <Row className="title-container" style={{padding: 0}}>
                     <Col md={5} style={{padding: 0}}>
                         <div className="title">

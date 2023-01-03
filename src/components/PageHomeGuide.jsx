@@ -36,7 +36,7 @@ const PageHomeGuide = (props) => {
     
     return (
         <div>
-            <Container fluid className="guide" style={{backgroundColor: "#f0f0f0"}}>
+            <Container fluid className="guide" style={{backgroundColor: "#f5fafa"}}>
                 <Row style={{margin: 0}}>
                     <div className="guide-header">
                         Nagłówek
