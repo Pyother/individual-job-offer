@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
+import { AiOutlineForm, AiOutlineDatabase } from "react-icons/ai";
+import { GrUserAdmin } from "react-icons/gr";
 import './components.css';
 
-import { Row, Col, Container, Grid} from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const PageHomeGuide = (props) => {
@@ -47,6 +49,8 @@ const PageHomeGuide = (props) => {
                     <Col md={4}>
                         <div ref={ref} className="guide-content" id='redirect-database'>
                             <Col >
+                                <Row>< AiOutlineDatabase style = {{height: "4vh"}}/></Row>
+                                <br/>
                                 <Row><h1>Baza danych</h1></Row>
                                 <Row><p>(Opis)</p></Row>
                             </Col>
@@ -55,6 +59,9 @@ const PageHomeGuide = (props) => {
                     <Col md={4}>
                         <div className="guide-content" id='redirect-form'>
                             <Col >
+                                
+                                <Row><AiOutlineForm style = {{height: "4vh"}}/></Row>
+                                <br />
                                 <Row><h1>Formularz</h1></Row>
                                 <Row><p>(Opis formularza)</p></Row>
                             </Col>
@@ -63,6 +70,8 @@ const PageHomeGuide = (props) => {
                     <Col md={4}>
                         <div className="guide-content" id='redirect-admin'>
                             <Col >
+                                <Row><GrUserAdmin style = {{height: "4vh"}}/></Row>
+                                <br />
                                 <Row><h1>Panel administracyjny</h1></Row>
                                 <Row><p>(Opis zastosowania panelu administracyjnego)</p></Row>
                             </Col>
